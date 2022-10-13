@@ -31,7 +31,6 @@ a{
 .bi-brightness-low{
     font-size: 30px;
     border-radius: 5px;
-    border: 2px solid grey;
     cursor: pointer;
     line-height: 40px;
     padding: 5px 10px;
@@ -48,7 +47,6 @@ a{
     display: none;
     cursor: pointer;
     border-radius: 5px;
-    border: 2px solid grey;
     padding: 5px 10px;
 }
 
@@ -82,9 +80,9 @@ a{
         position: fixed;
         top:-100%;
         gap: 0;
-        background-color: white;
-        width: 100%;
+        width: 90%;
         transition: 0.3s;
+        background-color: lightcoral;
     }
     .nav-item{
         margin: 16px 0;
@@ -92,4 +90,23 @@ a{
     .nav-menu.active{
         top: 70px;
     }
+    .hidden{
+        visibility: hidden;
+    }
+    .darkMode{
+        background-color: grey;
+    }
+    .lightMode{
+        background-color: #DFE6DF;
+        color: #2E3FF9;
+    }
+    .bi bi-brightness-low.active{
+        background-color: orange;
+        font-size: 30px;
+        border-radius: 5px;
+        cursor: pointer;
+        line-height: 40px;
+        padding: 5px 10px;
+    }
+
 }
