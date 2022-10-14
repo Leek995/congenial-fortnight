@@ -1,7 +1,5 @@
-h1{
-    color: blue;
-}
-/*mobile view*/
+/*mobile*/
+
 img{
     height: 100px;
     width: 100px;
@@ -12,10 +10,14 @@ img{
     object-fit: cover;
     object-position: 90% 10%;
 }
-header{
-
+.see-more{
+    margin-top: 30px;
 }
-@media only screen and (min-width: 768px) {
+h1 {
+    color: blue;
+}
+
+@media only screen and (min-width: 768px){
     img {
         height: 250px;
         width: 250px;
@@ -30,5 +32,8 @@ header{
         width: 80%;
         margin-right: auto;
         margin-left: auto;
+    }
+    .see-more{
+        margin-top: 4em;
     }
 }
