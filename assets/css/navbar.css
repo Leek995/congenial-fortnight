@@ -1,3 +1,29 @@
+:root[color-mode="light"] {
+    --surface1: #F9FCF2;
+    --surface2: #F6FBE8;
+    --surface3: #F1F7DD;
+    --element1: #262626;
+    --element2: #222222;
+    --element3: #A0A0A0;
+    --elementInverse: #eee;
+    --primary: #1512C8;
+    --secondary: #037C0B;
+    --tertiary: #CFCB02;
+}
+
+/* Dark Mode */
+:root[color-mode="dark"] {
+    --surface1: #262626;
+    --surface2: #333333;
+    --surface3: #404040;
+    --element1: #eeeeee;
+    --element2: #dddddd;
+    --element3: #cccccc;
+    --elementInverse: #111;
+    --primary: #8fceff;
+    --secondary: #72faca;
+    --tertiary: #eee8a9;
+}
 *{
     padding: 0;
     margin: 0;
@@ -19,6 +45,9 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .nav-menu{
     display: flex;
@@ -32,8 +61,7 @@ a{
     font-size: 30px;
     border-radius: 5px;
     cursor: pointer;
-    line-height: 40px;
-    padding: 5px 10px;
+    background-color: #F6B208;
 
     /*text-align: center;*/
 }
@@ -59,7 +87,9 @@ a{
     transition: all 0.3s ease-in-out;
     background-color: black;
 }
-
+.bi-linkedin{
+    font-size: 30px;
+}
 @media(max-width: 768px){
     .hamburger{
         display: block;
@@ -93,20 +123,8 @@ a{
     .hidden{
         visibility: hidden;
     }
-    .darkMode{
-        background-color: grey;
-    }
-    .lightMode{
-        background-color: #DFE6DF;
-        color: #2E3FF9;
-    }
-    .bi bi-brightness-low.active{
-        background-color: orange;
-        font-size: 30px;
-        border-radius: 5px;
-        cursor: pointer;
-        line-height: 40px;
-        padding: 5px 10px;
-    }
+
+
+
 
 }
