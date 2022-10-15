@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+
+}
+li{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+.nav-branding{
+}
+.bi-brightness-low{
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #F6B208;
+
+    /*text-align: center;*/
+}
+.nav-link{
+    transition: 0.7s ease;
+}
+.nav-link:hover{
+    color: red;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+.bi-linkedin{
+    font-size: 30px;
+}
+img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    object-fit: cover;
+    object-position: 90% 10%;
+}
+.heading{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.see-more{
+    margin-top: 4em;
+}
+.mainHead{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: -100%;
+        gap: 0;
+        width: 90%;
+        transition: 0.3s;
+        background-color: lightcoral;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        top: 70px;
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
+    img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        object-fit: cover;
+        object-position: 90% 10%;
+    }
+    .see-more{
+        margin-top: 30px;
+    }
+    h1 {
+        color: blue;
+    }
+}
