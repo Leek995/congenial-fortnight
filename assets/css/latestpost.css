@@ -1,0 +1,10 @@
+.latestPost{
+    width: 85%;
+}
+li{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: fade;
+    max-width: 500px;
+}
