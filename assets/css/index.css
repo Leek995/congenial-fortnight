@@ -65,8 +65,8 @@ a{
     font-size: 30px;
 }
 img {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     display: flex;
     align-items: flex-start;
@@ -83,13 +83,14 @@ img {
     justify-content: center;
 }
 .see-more{
-    margin-top: 4em;
+    margin-top: 2em;
 }
 .mainHead{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
+
 @media(max-width: 768px) {
     .hamburger {
         display: block;
@@ -144,6 +145,7 @@ img {
         margin-top: 30px;
     }
     h1 {
-        color: blue;
+        /*color: blue;*/
     }
+
 }
